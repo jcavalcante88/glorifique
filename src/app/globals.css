@@ -27,6 +27,11 @@
   --bs-link-hover-color-rgb: 255, 243, 204;
 }
 
+/* No celular o versículo quebra em 2–3 linhas: reserva mais espaço no fim da página */
+@media (max-width: 576px) {
+  :root { --g-altura-verso: 104px; }
+}
+
 html { scroll-behavior: smooth; }
 
 body {

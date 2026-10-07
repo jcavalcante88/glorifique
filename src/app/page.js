@@ -130,19 +130,25 @@ export default async function Inicio() {
         </div>
       </section>
 
-      {/* ---------- DOAÇÃO ---------- */}
+      {/* ---------- QUIZ ---------- */}
       <section className="container py-5">
         <div className="cartao p-4 p-md-5 text-center revelar" style={{ background: "linear-gradient(135deg, rgba(243,201,105,.12), rgba(255,255,255,.02))" }}>
-          <i className="bi bi-heart-fill text-danger fs-1" />
-          <h2 className="mt-3">Ajude a levar esperança a mais pessoas</h2>
+          <i className="bi bi-book-half text-ouro fs-1" />
+          <h2 className="mt-3">Você conhece os livros da Bíblia?</h2>
           <p className="text-suave mx-auto" style={{ maxWidth: 560 }}>
-            Sua doação mantém os servidores, o armazenamento dos vídeos e a equipe de moderação.
+            Um quiz rápido pelos 66 livros, com um resumo de cada um. Aprenda brincando.
           </p>
-          <Link href="/doar" className="btn btn-ouro btn-lg rounded-pill px-4 mt-2">
-            <i className="bi bi-qr-code me-1" /> Doar com Pix
+          <Link href="/quiz" className="btn btn-ouro btn-lg rounded-pill px-4 mt-2">
+            <i className="bi bi-play-fill me-1" /> Fazer o quiz
           </Link>
         </div>
       </section>
+
+      {/* ---------- DOAÇÃO (discreta) ---------- */}
+      <p className="text-center small text-suave pb-3 revelar">
+        Este projeto é mantido por doações.{" "}
+        <Link href="/doar" className="text-suave">Quer ajudar?</Link>
+      </p>
     </>
   );
 }

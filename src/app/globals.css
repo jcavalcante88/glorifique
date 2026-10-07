@@ -277,6 +277,21 @@ h1, h2, h3, .display-font {
 .valor-btn.active { background: var(--g-ouro) !important; color: var(--g-noite) !important; border-color: var(--g-ouro) !important; }
 .copia-cola { font-family: ui-monospace, monospace; font-size: .75rem; word-break: break-all; }
 
+/* ---------- Quiz bíblico ---------- */
+.quiz-letra {
+  font-family: "Fraunces", serif;
+  font-size: clamp(4rem, 12vw, 6rem);
+  line-height: 1;
+  color: var(--g-ouro);
+  text-shadow: 0 0 40px rgba(243, 201, 105, 0.45);
+  margin-bottom: .5rem;
+  animation: flutuar 6s ease-in-out infinite;
+}
+.quiz-progresso { background: var(--g-ouro); transition: width .4s ease; }
+.btn.quiz-certa, .btn.quiz-certa:disabled { background: var(--g-oliva); border-color: var(--g-oliva); color: var(--g-noite); opacity: 1; }
+.btn.quiz-errada, .btn.quiz-errada:disabled { background: #cf6f6f; border-color: #cf6f6f; color: #fff; opacity: 1; }
+.quiz-livro { background: var(--g-vidro); border: 1px solid var(--g-borda); }
+
 /* ---------- Revelar ao rolar ---------- */
 .revelar { opacity: 0; transform: translateY(28px); transition: opacity .8s ease, transform .8s cubic-bezier(.2,.8,.2,1); }
 .revelar.visivel { opacity: 1; transform: none; }

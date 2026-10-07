@@ -44,7 +44,7 @@ export default function RootLayout({ children }) {
             </span>
             <span className="d-flex gap-3">
               <a href="/privacidade" className="text-suave text-decoration-none">Privacidade</a>
-              <a href="/doar" className="text-ouro text-decoration-none"><i className="bi bi-heart-fill" /> Apoie este ministério</a>
+              <a href="/doar" className="text-suave text-decoration-none">Apoie</a>
             </span>
           </div>
         </footer>

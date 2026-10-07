@@ -38,8 +38,8 @@ export default async function Navbar() {
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" href="/doar">
-                <i className="bi bi-heart-fill me-1 text-danger" /> Doar
+              <Link className="nav-link" href="/quiz">
+                <i className="bi bi-book-half me-1" /> Quiz
               </Link>
             </li>
 

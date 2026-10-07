@@ -42,7 +42,8 @@ export default function RootLayout({ children }) {
               <img src="/logo.png" alt="" width="20" height="20" className="me-2 rounded-1" />
               Glorifique © {new Date().getFullYear()} · Feito para a glória de Deus
             </span>
-            <span>
+            <span className="d-flex gap-3">
+              <a href="/privacidade" className="text-suave text-decoration-none">Privacidade</a>
               <a href="/doar" className="text-ouro text-decoration-none"><i className="bi bi-heart-fill" /> Apoie este ministério</a>
             </span>
           </div>

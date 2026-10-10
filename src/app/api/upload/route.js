@@ -35,6 +35,8 @@ export async function POST(request) {
     });
     return NextResponse.json(resposta);
   } catch (erro) {
+    // Aparece em Vercel → Logs (o navegador só recebe uma mensagem genérica da biblioteca)
+    console.error("[upload] recusado:", erro.message);
     return NextResponse.json({ error: erro.message }, { status: 400 });
   }
 }

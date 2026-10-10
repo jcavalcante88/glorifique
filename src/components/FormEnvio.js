@@ -49,7 +49,12 @@ export default function FormEnvio() {
       });
       setVideo({ url: blob.url, duracao });
     } catch (err) {
-      setErroVideo(err.message || "Falha ao enviar o vídeo.");
+      const msg = err.message || "";
+      setErroVideo(
+        msg.includes("client token")
+          ? "Não conseguimos autorizar o envio do vídeo. Saia, entre de novo e tente outra vez."
+          : msg || "Falha ao enviar o vídeo."
+      );
     } finally {
       setEnviandoVideo(false);
     }
